@@ -1,16 +1,17 @@
 import React from 'react'
 import './App.css';
-import { BrowserRouter, Routes, Route, Link, Router } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 function Nav() {
     return (
         <header className='Nav'>
             <h1>
-                Hard Enduro</h1>
+                <Link to="/"> Hard Enduro</Link>
+            </h1>
             <ul>
                 <li>
-                    <a>News</a>
+                    <Link to='/News'> News</Link>
                 </li>
 
             </ul>

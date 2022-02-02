@@ -3,7 +3,8 @@ import './App.css';
 import Nav from './components/Nav/Nav';
 import News from './components/News/News'
 import Photo from './Photo.jpeg'
-import { BrowserRouter, Routes, Route, Link, Router } from 'react-router-dom'
+import { Link, Routes, Route } from 'react-router-dom'
+
 
 
 
@@ -14,11 +15,20 @@ function App() {
   return (
 
     <div>
-      <main>
-        <Nav />
-      </main>
+
+      <Nav />
       <img src={Photo} style={{ width: "30%" }} />
+      <main>
+        <Routes>
+          <Route path="/News" element={<News />} />
+
+
+        </Routes>
+
+
+      </main>
     </div>
+
 
   );
 }
