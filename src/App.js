@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import './App.css';
+import Nav from './components/Nav/Nav';
+import News from './components/News/News'
+import Photo from './Photo.jpeg'
+import { BrowserRouter, Routes, Route, Link, Router } from 'react-router-dom'
+
+
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      <main>
+        <Nav />
+      </main>
+      <img src={Photo} style={{ width: "30%" }} />
     </div>
+
   );
 }
 
