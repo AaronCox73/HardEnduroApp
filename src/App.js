@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css';
 import Nav from './components/Nav/Nav';
 import News from './components/News/News'
-import Photo from './Photo.jpeg'
-import { Link, Routes, Route } from 'react-router-dom'
+import Home from './components/Home/Home'
+
+import { Routes, Route } from 'react-router-dom'
+
+
 
 
 
@@ -17,11 +20,12 @@ function App() {
     <div>
 
       <Nav />
-      <img src={Photo} style={{ width: "30%" }} />
+
       <main>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/News" element={<News />} />
-
+   
 
         </Routes>
 

@@ -1,19 +1,19 @@
 import React from 'react'
 import './App.css';
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 function Nav() {
     return (
-        <header className='Nav'>
-            <h1>
-                <Link to="/"> Hard Enduro</Link>
-            </h1>
-            <ul>
-                <li>
-                    <Link to='/News'> News</Link>
-                </li>
+        <nav className='Nav'>
 
+            <NavLink to="/" style={{ textDecoration: 'none' }} >
+                <h1 className="Logo">Hard Enduro</h1>
+            </NavLink>
+            <ul>
+                <Link to='/News' style={{ textDecoration: 'none' }}>
+                    <li>News</li>
+                </Link>
             </ul>
             <ul>
                 <li><a>Videos</a></li>
@@ -32,7 +32,7 @@ function Nav() {
                 <li>Sign Up</li>
             </ul>
 
-        </header>
+        </nav>
 
     );
 }

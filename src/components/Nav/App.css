@@ -5,3 +5,17 @@
     background-color: black;
     color: white;
 }
+
+
+
+li {
+    color: white;
+    margin: 0 0.8rem;
+    font-size: 1.3rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+.Logo {
+    color: white
+}
